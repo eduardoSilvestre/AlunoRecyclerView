@@ -1,11 +1,14 @@
 package br.com.digitalhouse.alunosrecyclerview.model;
 
+import java.util.Date;
+
 public class Aluno {
 
     private String nome;
     private String curso;
+    private String dataNasc;
 
-    public Aluno(String nome, String curso) {
+    public Aluno(String nome, String curso, String dataNasc) {
         this.nome = nome;
         this.curso = curso;
     }
@@ -24,5 +27,13 @@ public class Aluno {
 
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    public String getDataNasc() {
+        return dataNasc;
+    }
+
+    public void setDataNasc(String dataNasc) {
+        this.dataNasc = dataNasc;
     }
 }

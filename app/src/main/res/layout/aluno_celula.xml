@@ -36,4 +36,16 @@
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/aluno_image_view"
         app:layout_constraintTop_toBottomOf="@+id/nome_aluno_text_view" />
+
+    <TextView
+        android:id="@+id/data_nasc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aluno_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/curso_text_view" />
 </android.support.constraint.ConstraintLayout>

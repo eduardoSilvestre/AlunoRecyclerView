@@ -46,6 +46,7 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.ViewHolder> 
         private ImageView alunoImageView;
         private TextView nomeTextView;
         private TextView cursoTexView;
+        private TextView dataNasc;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -53,12 +54,15 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.ViewHolder> 
             alunoImageView = itemView.findViewById(R.id.aluno_image_view);
             nomeTextView = itemView.findViewById(R.id.nome_aluno_text_view);
             cursoTexView = itemView.findViewById(R.id.curso_text_view);
+            dataNasc = itemView.findViewById(R.id.data_nasc_text_view);
+
         }
 
         public void setupALuno(Aluno aluno){
 
             nomeTextView.setText(aluno.getNome());
             cursoTexView.setText(aluno.getCurso());
+            dataNasc.setText(aluno.getDataNasc());
         }
     }
 }
