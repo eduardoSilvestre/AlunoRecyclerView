@@ -1,8 +1,9 @@
 package br.com.digitalhouse.alunosrecyclerview.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Aluno {
+public class Aluno implements Serializable {
 
     private String nome;
     private String curso;
@@ -11,7 +12,10 @@ public class Aluno {
     public Aluno(String nome, String curso, String dataNasc) {
         this.nome = nome;
         this.curso = curso;
+        this.dataNasc = dataNasc;
     }
+    public Aluno(){}
+
 
     public String getNome() {
         return nome;
